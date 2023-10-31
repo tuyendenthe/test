@@ -1,0 +1,56 @@
+body {
+    background-image: url("../img/backgroud.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#form-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(250, 126, 81, 0.856);
+    padding: 30px;
+    border-radius: 20px;
+   
+}
+#form-login .name-form {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+#form-login .input-login {
+    width: 270px;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(74, 74, 74);
+}
+#form-login .submit-login {
+    width: 100%;
+    margin: 20px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(223, 210, 203);
+    background-color: orangered;
+    
+}
+.submit-login:hover {
+
+    transform: translateY(2px);
+
+}
+

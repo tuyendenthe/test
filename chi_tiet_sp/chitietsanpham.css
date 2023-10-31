@@ -1,0 +1,157 @@
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+body {
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text);
+}
+
+
+/* variable color */
+
+
+:root {
+    --color-primary: #f77f00;
+    --color-text: #ffffff;
+}
+
+
+/* CSS article */
+
+
+.header {
+    background-color: var(--color-primary);
+}
+
+
+.wrapper-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.header .action {
+    display: flex;
+    align-items: center;
+}
+
+
+.action .action-icon {
+    margin: 0 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.action-icon:hover {
+    border-radius: 50%;
+    transform: scale(1.1);
+    color: #7400b8;
+}
+
+
+.logo .logo-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+.logo-name {
+    font-size: 55px;
+    font-weight: 1000;
+    color: #248277;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.nav .nav-link {
+    color: var(--color-text);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    padding: 5px 20px;
+}
+
+
+.nav .nav-link:hover {
+    border-bottom: 1px solid var(--color-text);
+    transition: border-bottom 0.2s linear;
+}
+.icon-cart {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.icon-cart span {
+    border: 1px solid;
+    padding: 0 5px;
+    border-radius: 50%;
+}
+.btn-user {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+  }
+  
+  .product-image {
+    flex: 0 0 50%;
+  }
+  
+  
+  
+  
+  #add-to-cart {
+    padding: 20px 80px;
+    font-size: 16px;
+    background-color: #ff7300;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 550px;
+  }
+  
+  #add-to-cart:hover {
+    background-color: #e6a417;
+  }
+  
+  #buy {
+    padding: 20px 80px;
+    font-size: 16px;
+    background-color: #ff7300;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 550px;
+    margin-left: 50px;
+  }
+  
+  #buy:hover {
+    background-color: #e6a417;
+  }
+#small{
+    display: block;
+}

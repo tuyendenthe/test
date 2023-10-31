@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang thanh toán</title>
+  <link rel="stylesheet" href="thanhtoan_css.css">
+</head>
+<body style="background-image: url('../asm/img/backgroud.jpg');">
+  <header style="background-color: #f77f00;"> 
+    <div class="wrapper-header">
+        <div class="logo">
+            <h1 class="logo-name">TTQ Store</h1>
+        </div>
+        <!-- nav  -->
+
+
+
+        <nav class="nav">
+            <a href="../trang_chu/index.html" class="nav-link">Home</a>
+            <a href="" class="nav-link">Laptop</a>
+            <a href="" class="nav-link">Smart phone</a>
+            <a href="" class="nav-link">Apple watch</a>
+        </nav>
+   
+  </header>
+  <main>
+    <h1 style="color: rgb(247, 161, 0);">Thông tin khách hàng</h1>
+    <form>
+      <label for="fullname">Họ tên:</label>
+      <input type="text" id="fullname aa" name="fullname" required>
+  
+      <label for="phone">Số điện thoại:</label>
+      <input type="tel" id="phone aa" name="phone" required>
+  
+      <label for="address">Địa chỉ:</label>
+      <textarea id="address aa" name="address" required></textarea>
+  
+      <h2>Sản phẩm đã chọn mua</h2>
+      <ul class="product-list">
+        <li>
+          <div class="product-info">
+            <img src="../img/applewacth.jpg" alt="Product Image">
+            <div class="product-details"> <br>
+              <span class="product-name">Apple Watch Series 6</span> <br>
+              <span class="product-price">$399.99</span>
+            </div>
+          </div>
+          <div class="product-quantity">
+            <button class="quantity-button" data-action="decrease">-</button>
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="quantity-button" data-action="increase">+</button>
+          </div>
+        </li>
+        <!-- Thêm các sản phẩm khác vào đây -->
+      </ul>
+  
+      <h2>Phương thức thanh toán</h2>
+      <div class="payment-methods">
+        <label>
+          <input type="radio" name="payment-method"  value="cash-on-delivery" required>
+          Trả tiền khi nhận hàng
+        </label>
+        <label>
+          <input type="radio" name="payment-method" value="online-payment" required>
+          Thanh toán online
+        </label>
+      </div>
+  
+      <input type="submit" value="Hoàn thành thanh toán" class="checkout-button" onclick="thanhtoan()">
+    </form>
+  </main>
+  
+  <footer style="position: absolute; top: 800px; width: 100%; height: 50px;">
+    
+        <div class="footer-container">
+         
+          <div class="footer-info">
+            <h3>TTQ Store</h3>
+            <p>123 Main Street, City</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@ttqstore.com</p>
+          </div>
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#" target="_blank"><img src="" alt="Facebook"></a>
+              <a href="#" target="_blank"><img src="" alt="Twitter"></a>
+              <a href="#" target="_blank"><img src="" alt="Instagram"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 TTQ Store. All rights reserved.</p>
+          <p>Website by : <a href="https://www.tuyendenthe.com" target="_blank">TTQ Store</a></p>
+        </div>
+  </footer>
+  
+</body>
+
+</html>
